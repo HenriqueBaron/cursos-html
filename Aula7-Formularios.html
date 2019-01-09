@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+	<form>
+		<!-- placeholder: texto que aparece por padrão no campo,
+		enquando nada é digitado. -->
+		<input type="text" placeholder="Nome" maxlength="20" />
+		<input type="email" />
+		<input type="search" />
+		<input type="url" />
+		<input type="number" />
+
+		<input type="radio" name="genero" /> Masculino
+		<input type="radio" name="genero" /> Feminino
+
+		<input type="checkbox" />Opção 1
+		<input type="checkbox" />Opção 2
+
+		<input type="date" />
+		<input type="time" />
+		<input type="month" />
+		<input type="week" />
+		<input type="datetime-local"/>
+
+		<input type="range" min="1" max="10" />
+		<input type="color" />
+		<input type="file" />
+
+		<input type="button" value="Botão" />
+		<input type="submit" value="Enviar formulário" />
+		<input type="reset" value="Limpar formulário" />
+
+		<select>
+			<option value="html" >HTML 5</option>
+			<option value="css" >CSS 3</option>
+			<option value="js" >JavaScript</option>
+		</select>
+
+		<!-- O atributo multiple muda o controle de um drop down
+	  	para uma lista, e permite a seleção de múltiplas opções. -->
+		<select multiple="">
+			<option value="html" >HTML 5</option>
+			<option value="css" >CSS 3</option>
+			<option value="js" >JavaScript</option>
+		</select>
+
+		<!-- O datalist cria um efeito semelhante a um dropdown,
+	  	mas possibilita ao usuário digitar o texto da opção, com
+		possibilidade de autocompletar -->
+		<input type="text" list="navegadores" />
+
+		<datalist id="navegadores" >
+			<option value="Internet Explorer" />
+			<option value="Firefox" />
+			<option value="Chrome" />
+			<option value="Opera" />
+			<option value="Safari" />
+		</datalist>
+
+		<fieldset>
+			<legend>Cadastro</legend>
+			<input type=text />
+			<input type=text />
+			<input type=text />
+			<input type=text />
+			<input type=text />
+		</fieldset>
+
+	</form>
+</body>
+</html>
