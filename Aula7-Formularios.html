@@ -35,42 +35,57 @@
 		<input type="submit" value="Enviar formulário" />
 		<input type="reset" value="Limpar formulário" />
 
-		<select>
-			<option value="html" >HTML 5</option>
-			<option value="css" >CSS 3</option>
-			<option value="js" >JavaScript</option>
-		</select>
+	</form>
 
-		<!-- O atributo multiple muda o controle de um drop down
-	  	para uma lista, e permite a seleção de múltiplas opções. -->
-		<select multiple="">
-			<option value="html" >HTML 5</option>
-			<option value="css" >CSS 3</option>
-			<option value="js" >JavaScript</option>
-		</select>
+	<select>
+		<option value="html" >HTML 5</option>
+		<option value="css" >CSS 3</option>
+		<option value="js" >JavaScript</option>
+	</select>
 
-		<!-- O datalist cria um efeito semelhante a um dropdown,
-	  	mas possibilita ao usuário digitar o texto da opção, com
-		possibilidade de autocompletar -->
-		<input type="text" list="navegadores" />
+	<!-- O atributo multiple muda o controle de um drop down
+	para uma lista, e permite a seleção de múltiplas opções. -->
+	<select multiple="">
+		<option value="html" >HTML 5</option>
+		<option value="css" >CSS 3</option>
+		<option value="js" >JavaScript</option>
+	</select>
 
-		<datalist id="navegadores" >
-			<option value="Internet Explorer" />
-			<option value="Firefox" />
-			<option value="Chrome" />
-			<option value="Opera" />
-			<option value="Safari" />
-		</datalist>
+	<!-- O datalist cria um efeito semelhante a um dropdown,
+	mas possibilita ao usuário digitar o texto da opção, com
+	possibilidade de autocompletar -->
+	<input type="text" list="navegadores" />
 
-		<fieldset>
-			<legend>Cadastro</legend>
-			<input type=text />
-			<input type=text />
-			<input type=text />
-			<input type=text />
-			<input type=text />
-		</fieldset>
+	<datalist id="navegadores" >
+		<option value="Internet Explorer" />
+		<option value="Firefox" />
+		<option value="Chrome" />
+		<option value="Opera" />
+		<option value="Safari" />
+	</datalist>
+
+	<fieldset>
+		<legend>Cadastro</legend>
+		<!-- Adicionar o atributo "for" a um label, ligando-o
+		ao "id" de uma input, faz com que, ao clicar no label,
+		o input associado receba foco do cursor de texto. -->
+		<label for="rua" >Rua</label>
+		<input type=text id="rua" />
+		<label for="numero" >Número</label>
+		<input type=text id="numero" />
+		<label for="bairro" >Bairro</label>
+		<input type=text id="bairro" />
+	</fieldset>
+
+	<form oninput="x.value=parseInt(a.value)+parseInt(b.value)" />
+
+		0 <input type="range" id="a" value="50" /> 100
+
+		<input type="number" id="b" value="50" />
+
+		<output name="x" for"a b"></output>
 
 	</form>
+
 </body>
 </html>
