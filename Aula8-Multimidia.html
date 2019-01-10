@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+	<figure>
+		<img src="Logo HTML5.png" alt="Logotipo do HTML5" />
+		<figcaption>Logo do HTML5</figcaption>
+	</figure>
+
+	<!-- O atributo "controls" faz com que os controles de play, pause
+	 e volume sejam exibidos -->
+	<audio controls>
+		<!-- Outras linhas da tag source, com outros formatos de
+	  	áudio, podem ser colocadas dentro do elemento "audio".
+		Isso permite que o áudio desejado seja reproduzido em
+		diversos navegadores/dispositivos, que trabalham com
+		diferentes formatos de áudio. -->
+		<source src="musica.mp3" type="audio/mpeg">
+	</audio>
+
+	<!-- O atributo "poster" permite definir uma imagem que permanece
+	 exibida no quadro de vídeo enquanto ele carrega -->
+	<video controls width="600" height="600" poster="Logo HTML5.png">
+		<!-- O princípio de sources com o elemento video é igual
+	  	ao do elemento audio -->
+		<source src="video.mp4" type"video/mp4" >
+	</video>
+
+</body>
+</html>
