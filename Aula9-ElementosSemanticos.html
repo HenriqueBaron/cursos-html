@@ -55,5 +55,39 @@
 	 <!-- O elemento dialog exibe uma caixa de diálogo modal na página. Aparentemente, não
 	  funciona no MS Edge -->
 	 <dialog open> Minha caixa de diálogo</dialog>
+
+	 <!-- header e footer indicam o cabeçalho e rodapé, respectivamente.
+	  Essas tags são tags de bloco, como a tag div, e não exibem nada, a menos
+	  que estilizadas.
+	  Apesar do nome, eles podem ser utilizados múltiplas vezes em um mesmo
+	  documento, pois podem servir para formar o cabeçalho e rodapé de outros
+	  elementos montados dentro da página. -->
+	 <header>Cabeçalho</header>
+	 <footer>Rodapé</footer>
+
+	 <!-- A tag main, por sua vez, indica a parte principal do documento.
+	  Ela só pode aparecer uma vez no documento, e não pode ser filha de tags
+	  como div, header, footer e nav. -->
+	 <main>Parte principal</main>
+
+	 <!-- nav define a semântica para uma barra de navegação, onde o motor de
+	  busca que inspecionar a página pode entender que naquela região existem
+	  links para outras áreas do site. -->
+	 <nav>
+		 <a href="/">Home</a>
+		 <a href="Aula6-Links-Contato.html">Contato</a>
+		 <a href="Aula6-Links-Sobre.html">Sobre</a>
+	 </nav>
+
+	 <!-- A section, assim como a div, é um elemento de bloco (não exibe nada
+	  por padrão) que serve para definir partes do documento, como seções,
+	  capítulos, ou cabeçalhos e rodapés. -->
+	 <section>Seção teste</section>
+
+	 <!-- A tag time serve para indicar datas, podendo indicar (dependendo do navegador
+	  e dispositivo) um link para adicionar a data ao calendário. Neste elemento, 
+	  o atributo datetime é opcional e serve para definir a data "de um modo que
+	  computadores entendam". -->
+	 <p>O evento irá ocorrer no dia <time datetime="2019-07-07 21:00">7 de julho de 2019 às 9 da noite</time>.</p>
 </body>
 </html>
