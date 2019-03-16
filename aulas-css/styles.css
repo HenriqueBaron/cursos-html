@@ -1,0 +1,9 @@
+div{
+	color: red; /* Alteração da cor do elemento */
+	background-color: #00FF00; /* Alteração da cor de fundo, com representação hexadecimal */
+	opacity: 0.5; /* Configura a opacidade do elemento HTML. Varia de 0 (transparente) a 1 (opaco) */
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(0,0,255); /* Configurações da borda, com mais uma possível representação de cor
+	em CSS. */
+}
