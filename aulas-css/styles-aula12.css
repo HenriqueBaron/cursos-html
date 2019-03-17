@@ -1,0 +1,18 @@
+div{
+	color: red; /* Alteração da cor do elemento */
+	background-color: #00FF00; /* Alteração da cor de fundo, com representação hexadecimal */
+	opacity: 0.5; /* Configura a opacidade do elemento HTML. Varia de 0 (transparente) a 1 (opaco) */
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(0,0,255); /* Configurações da borda, com mais uma possível representação de cor
+	em CSS. */
+	/* Outras possibilidades de entrar com cores são:
+	 * rgb(<red>,<green>,<blue>) - Define a quantidade de cada cor
+	 * rgba(<red,<green>,<blue>,<alpha>) - igual ao "rgb" mas permite definir a transparência,
+	 * 	de 0 a 1.
+	 * hsl(<hue>,<saturation>,<lightness>) - sintaxe semelhante ao RGB, mas com o padrão HSL.
+	 * 	No padrão HSL, "hue" deve ser um valor inteiro de 0 a 360, enquanto "saturation"
+	 * 	e "lightness" são porcentagens, e na sintaxe, o caractere % deve ser utilizado.
+	 * hsla(<hue>,<saturation>,<lightness>,<alpha>) - semelhante ao HSL, mas permite definir a
+	 * 	transparência, de 0 a 1. */
+}
