@@ -1,0 +1,23 @@
+/* Uma possibilidade para o uso de fontes é declarar fontes que já estejam
+ * instaladas no computador onde a página será exibida. Uma sequência de
+ * famílias de fontes pode ser utilizada para que o navegador tente utilizar
+ * a primeira que encontrar instalada no computador.
+ * Observe também que fontes com espaço no nome devem ter o nome entre aspas. */
+p{
+	/*font-family: "Times New Roman", Tahoma, Arial;*/
+	/* font-family: MinhaFonte; */
+
+	/* Além disso, pode-se utilizar a API de fontes do Google, que oferece diversas
+	 * fontes instaladas em seu servidor. Neste exemplo, utilizarei a fonte Roboto.
+	 * Para conectar à API do Google, um link é colocado no código HTML. */
+	font-family: Roboto, sans-serif;
+}
+
+/* Outra possibilidade é empregar a regra @font-face que permite definir uma
+ * fonte que esteja armazenada no servidor da página. Como mostrado abaixo,
+ * uma URL para o arquivo da fonte é especificada (que neste caso está na mesma
+ * pasta do arquivo HTML), e um nome para a família de fontes é fornecido. */
+@font-face{
+	font-family: MinhaFonte;
+	src: url("AMAZR___.ttf");
+}
