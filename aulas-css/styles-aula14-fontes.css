@@ -4,13 +4,53 @@
  * a primeira que encontrar instalada no computador.
  * Observe também que fontes com espaço no nome devem ter o nome entre aspas. */
 p{
-	/*font-family: "Times New Roman", Tahoma, Arial;*/
+	font-family: Verdana, "Times New Roman", Tahoma, Arial;
+	
+	/* Aqui, utiliza-se o font-style criado com a regra @font-face. */	
 	/* font-family: MinhaFonte; */
 
 	/* Além disso, pode-se utilizar a API de fontes do Google, que oferece diversas
 	 * fontes instaladas em seu servidor. Neste exemplo, utilizarei a fonte Roboto.
 	 * Para conectar à API do Google, um link é colocado no código HTML. */
-	font-family: Roboto, sans-serif;
+	/* font-family: Roboto, sans-serif; */
+
+	font-style: italic; /* Estilo da fonte: italic, normal ou oblique. */
+	/* font-variant: small-caps; /* Variante da fonte, como o Small Caps já
+	conhecido do LaTeX. */
+	font-weight: 400; /* Define o peso da fonte, variando de 100 (Thin) até
+	900 (Black). Fornecer "bold" ou "bolder" em vez de um número utiliza um
+	valor entre 400 e 600 que varia de acordo com a fonte. */
+
+	/* font-size determina o tamanho da fonte. Os seguintes valores-padrão
+	 * podem ser utilizados:
+	 * xx-small
+	 * x-small
+	 * small
+	 * medium
+	 * large
+	 * x-large
+	 * xx-large
+	 *
+	 * Da mesma forma, podem ser utilizadas diretamente unidades de medida
+	 * como mm, cm, m, as unidades tipográficas pt, pc, em, ex, e px (pixel).
+	 * Outra unidade é o rem ("root em"), que utiliza o valor do elemento raiz. */
+	font-size: x-large;
+
+	/* font-stretch define o grau de expansão ou condensação da fonte. Pode
+	 * assumir os seguintes valores:
+	 * ultra-condensed
+	 * extra-condensed
+	 * condensed
+	 * semi-condensed
+	 * normal
+	 * semi-expanded
+	 * expanded
+	 * extra-expanded
+	 * ultra-expanded
+	 *
+	 * Alguns destes valores podem não ter efeito de acordo com a fonte utilizada,
+	 * se essa fonte não possuir tais níveis de expansão. */
+	font-stretch: extra-condensed; 
 }
 
 /* Outra possibilidade é empregar a regra @font-face que permite definir uma
