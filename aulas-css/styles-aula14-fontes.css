@@ -50,7 +50,30 @@ p{
 	 *
 	 * Alguns destes valores podem não ter efeito de acordo com a fonte utilizada,
 	 * se essa fonte não possuir tais níveis de expansão. */
-	font-stretch: extra-condensed; 
+	font-stretch: extra-condensed;
+
+	/* color define a cor do texto. */
+	color: blue;
+
+	/* text-indent é a indentação do primeiro parágrafo do texto. */
+	text-indent: 40px;
+
+	/* text-align indica a justificação do texto: left, right, center ou justify. */
+	text-align: justify;
+
+	/* text-decoration permite decorar o texto com opções como underline, overline,
+	 * ou line-through (que corresponde ao texto riscado). */
+	text-decoration: overline;
+
+	/* text-transform transforma os caracteres do texto, com as opções:
+	 * capitalize: Primeira Letra De Cada Palavra Maiúscula
+	 * uppercase: TODAS AS LETRAS MAIÚSCULAS
+	 * lowercase: todas as letras minúsculas
+	 * none: sem qualquer transformação */
+	text-transform: capitalize;
+
+	/* text-shadow permite adicionar sombra à fonte (parece um WordArt).
+	 * Para utilizar a sombra de fonte deve-se passar os parâmetros:
 }
 
 /* Outra possibilidade é empregar a regra @font-face que permite definir uma
