@@ -74,6 +74,47 @@ p{
 
 	/* text-shadow permite adicionar sombra à fonte (parece um WordArt).
 	 * Para utilizar a sombra de fonte deve-se passar os parâmetros:
+	 * Posição horizontal
+	 * Posição vertical
+	 * Nível de ofuscação
+	 * Cor da sombra 
+	 *
+	 * O TreinaWeb recomenda tomar cuidado com o uso dessa propriedade,
+	 * que pode deixar o carregamento da página lento, especialmente em
+	 * dispositivos móveis. */
+	text-shadow: 1px 1px 1px #0000FF;
+
+	/* letter-spacing configura o espaço que é dado entre cada caractere
+	 * do texto. Aumentar o espaçamento facilita a leitura e é bom para
+	 * dar destaque a títulos, por exemplo. */
+	letter-spacing: 3px;
+
+	/* word-spacing tem efeito semelhante a letter-spacing, mas entre as
+	 * palavras do texto. */
+	word-spacing: 5px;
+
+	/* line-height define a altura relativa da linha. Podem ser utilizadas
+	 * medidas relativas, como percentagem, ou medidas absolutas como pixels.*/
+	line-height: 200%;
+
+}
+
+div{
+	width: 200px;
+	border: solid 1px #CECECE;
+
+	/* A propriedade white-space dita como serão tratados espaços em branco
+	 * e quebras de linha. As seguintes opções estão disponíveis:
+	 * normal: Espaços e tabulações em branco são ignorados pelo browser;
+	 * pre: Espaços e tabulações em branco são preservados pelo browser e
+	 * 	não há quebra de linha. Novas linhas são preservadas;
+	 * pre-wrap: Espaços e tabulações em branco são preservados pelo browser
+	 * 	e há quebra de linha. Novas linhas são preservadas.
+	 * nowrap: O texto é apresentado em uma única linha na tela. Não há quebra
+	 * 	de linha até ser encontrada uma tag <br/>. Novas linhas não são
+	 * 	preservadas e não há quebra de linha.
+	 * pre-line: Sequências de quebras de linha são preservadas. */
+	white-space: normal; 
 }
 
 /* Outra possibilidade é empregar a regra @font-face que permite definir uma
