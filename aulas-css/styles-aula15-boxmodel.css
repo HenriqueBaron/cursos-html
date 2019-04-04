@@ -1,0 +1,23 @@
+/* A propriedade display define como o elemento será exibido na página:
+ * block: elemento ocupa a linha inteira, podendo definir uma altura e largura.
+ * 	  Outro elemento será posicionado na linha abaixo.
+ * inline: elementos cujo tamanho depende do conteúdo, não sendo possível definir
+ * 	   uma altura e largura para estes. Por não ocupar necessariamente uma 
+ * 	   linha inteira, o elemento seguinte será exibido na mesma linha se houver
+ * 	   espaço.
+ * inline-block: é uma mistura dos comportamentos dos dois anteriores. Funciona
+ * 		 como o inline, com a diferença de que é possível definir largura
+ * 		 e altura.
+ * none: oculta o elemento. */
+h1{
+	display: block;
+}
+
+h2{
+	display: none;
+}
+
+h3{
+	display: inline-block;
+}
+
