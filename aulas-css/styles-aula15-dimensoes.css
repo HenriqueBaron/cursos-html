@@ -1,0 +1,53 @@
+div{
+	background-color: #cecece;
+	/* As dimensões de width e height podem ser indicadas com o percentual da tela */
+	width: 80%;
+	/* Simultaneamente ao percentual da tela pode-se utilizar valores mínimos e máximos
+	 * em pixels, para o caso da página ser exibida em uma tela muito grande ou em um celular
+	 * com tela muito pequena */
+	max-width: 1000px;
+	min-width: 500px;
+	/* Por default, o tamanho de um elemento (width e height) não considera o padding e
+	 * border, de modo que a largura total do elemento (e igualmente a altura) é dada por:
+	 * 	total = width + padding + border
+	 *
+	 * Utilizar o valor "border-box" para a propriedade "box-sizing" altera esse comportamento
+	 * para algo mais intuitivo, de modo que "width" e "height" dão a largura e altura totais
+	 * do elemento, incluindo padding e border. */
+	box-sizing: border-box;
+
+	/* Sombreamento do elemento, com os valores, na ordem: posição horizontal, vertical,
+	 * nível de ofuscamento da sombra e cor. O uso do sombreamento pode deixar o carregamento
+	 * da página lento. */
+	box-shadow: 10px 10px 5px #888888;
+
+	/* O outline é a linha que existe em volta dos elementos e serve para destacá-los. O
+	 * outline, diferente da borda, não faz parte das dimensões do elemento. A propriedade
+	 * outline leva quatro valores, que representam: cor, distância da linha em relação à
+	 * borda do elemento, estilo da borda, e largura (espessura) da linha da borda. */
+	outline: #ff0000 5px dashed 3px;
+	/* Alternativamente podem ser utilizadas as propriedades:
+	 * 	outline-color
+	 * 	outline-offset
+	 * 	outline-style
+	 * 	outline-width
+	 */
+}
+	
+h1{
+	/* O overflow determina o comportamento quando o conteúdo do elemento ultrapassa
+	 * as suas dimensões. A propriedade overflow é um atalho para overflow-x e overflow-y
+	 * que determinam o comportamento em cada direção. Utilizar apenas overflow define o
+	 * mesmo valor para as duas direções.
+	 * Os valores possíveis para a propriedade overflow são:
+	 * 	hidden - esconde o conteúdo que ultrapassa as dimensões do elemento
+	 * 	visible - exibe o conteúdo que ultrapassa as dimensões do elemento
+	 * 	scroll - exibe a barra de rolagem sempre
+	 * 	exibe a barra de rolagem apenas se necessário
+	 */
+	background-color: #eee;
+	width: 50px;
+	height: 50px;
+	border: 1px dotted black;
+	overflow: auto;
+}

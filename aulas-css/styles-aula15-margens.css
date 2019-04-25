@@ -1,0 +1,20 @@
+h1{
+	/* As propriedades abaixo foram colocadas para mostrar a diferença entre
+	 * cada tipo de dimensão: width, margin, padding e border. */
+	color: #ffffff;
+	background-color: #264968;
+	width: 400px;
+	/* Se declarado um valor só, a medida é igual para todos os lados */
+	margin: 10px; 
+	/* Podem ser declaradas quatro medidas, representando, na ordem: top, right, bottom, left
+	 * (lembrar sempre do giro de um relógio) */
+	padding: 15px 30px 45px 60px;
+	/* De maneira equivalente à declaração acima, podem-se utilizar as medidas
+	 * de cada lado individualmente:
+	 * padding-top
+	 * padding-right
+	 * padding-bottom
+	 * padding-left */
+	border: 5px solid #cecece;
+	border-radius: 30px;
+}
