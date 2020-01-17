@@ -6,7 +6,21 @@
     <title></title>
 </head>
 <body>
-	<form>
+	<!--A tag form indica um formulário, e não tem função estética, apenas
+	semântica.-->
+	<!--
+	   -Alguns atributos possíveis para o form:
+	   -accept-charset - define qual charset será utilizado pelo
+	   -    formulário
+	   -autocomplete - habilita o form a utilizar as listas de
+	   -    autocompletar do navegador
+	   -action - especifica para onde os dados serão enviados
+	   -method - indica qual método HTTP será utilizado (POST, GET, PUT)
+	   -enctype - encoding type dos dados ao enviar para o servidor. Só
+	   -    pode ser utilizado com o método HTTP POST
+	   -novalidate - Impede a validação dos dados antes da submissão
+	   -->
+	<form accept-charset="utf-8" autocomplete="on">
 		<!-- placeholder: texto que aparece por padrão no campo,
 		enquando nada é digitado. -->
 		<input type="text" placeholder="Nome" maxlength="20" />
