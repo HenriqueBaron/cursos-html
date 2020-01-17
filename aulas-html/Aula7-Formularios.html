@@ -21,21 +21,30 @@
 	   -novalidate - Impede a validação dos dados antes da submissão
 	   -->
 	<form accept-charset="utf-8" autocomplete="on">
+		<!--Todos os campos para entrada de informação são do tipo
+		<input>. O que muda é o atributo "type".-->
 		<!-- placeholder: texto que aparece por padrão no campo,
 		enquando nada é digitado. -->
 		<div>
+			<!--Alguns atributos para o tipo "text": placeholder, maxlength,
+			required, disabled e readonly-->
 			<input type="text" placeholder="Nome" maxlength="20" />
+			<!--Estes campos são idênticos ao "text", com a diferença que
+			habilitam funcionalidades específicas para o seu propósito.
+			Por exemplo, em um smartphone, um campo "email" exibe o
+			"@" e ".com" no teclado.-->
 			<input type="email" />
 			<input type="search" />
 			<input type="url" />
 		</div>
 
 		<div>
-			<input type="radio" name="genero" /> Masculino
+			<input type="radio" name="genero" checked="checked"/> Masculino
 			<input type="radio" name="genero" /> Feminino
 
 			<input type="checkbox" />Opção 1
-			<input type="checkbox" />Opção 2
+			<input type="checkbox" checked="checked"/>Opção 2
+			<input type="checkbox" />Opção 3
 		</div>
 
 		<div>
