@@ -1,0 +1,24 @@
+div{
+	border: 2px solid black;
+	display: inline-block;
+	/*Os tipos de posicionamento possíveis para um elemento são:
+	static: Posicionamento default. O elemento é posicionado no "fluxo
+		normal" do HTML. Geralmente não é utilizado
+	relative: indica "relativo a si mesmo". Deve ser combinado com o
+		parâmetro top, left, bottom ou right (nunca conflitando), de
+		modo que o elemento será deslocado "a partir daquela direção".
+		Por exemplo, usar "bottom: 20px" indica que o elemento será
+		deslocado 20px a partir da parte inferior, ou seja, irá
+		deslocá-lo para cima.
+	absolute: indica exatamente onde posicionar o elemento. Essa
+		posição será relativa ao próximo elemento pai com posicionamento
+		relativo (ou absoluto). Se não houver nenhum elemento pai para
+		o que for posicionado como absoluto, o posicionamento ficará
+		em relação à própria página (a base do HTML).
+	fixed: é utilizado mais raramente. Define a posição do elemento
+		relativa ao "viewport", ou seja, a janela do navegador. Por
+		isso, o elemento permanecerá na posição independente de
+		movimentos de scroll na página.*/
+	position: fixed;
+	bottom: 20px;
+}
