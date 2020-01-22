@@ -1,0 +1,25 @@
+div{
+	/*display: inline-block;*/
+	width: 150px;
+	height: 150px;
+	background: green;
+	/*
+	 *Utilizar a propriedade float altera a disposição do elementos
+	 *adjacentes ao configurado. Neste exemplo, comentar a linha abaixo
+	 *faz com que o texto do HTML fique posicionado abaixo da div,
+	 *enquanto definir um valor para float faz com que o texto contorne
+	 *o elemento.
+	 */
+	float: left;
+}
+
+p{
+	/*
+	 *A propriedade "clear" pode ser passada para anular no elemento
+	 *configurado a propriedade float. Neste exemplo, o clear para o
+	 *elemento "p" faz com que o texto dentro deste item fique
+	 *posicionado abaixo da div, "cancelando" o efeito da propriedade
+	 *float.
+	 */
+	clear: both;
+}
