@@ -1,6 +1,9 @@
-div{
+div, p{
 	border: 2px solid black;
 	display: inline-block;
+}
+
+div{
 	/*Os tipos de posicionamento possíveis para um elemento são:
 	static: Posicionamento default. O elemento é posicionado no "fluxo
 		normal" do HTML. Geralmente não é utilizado
@@ -19,6 +22,32 @@ div{
 		relativa ao "viewport", ou seja, a janela do navegador. Por
 		isso, o elemento permanecerá na posição independente de
 		movimentos de scroll na página.*/
-	position: fixed;
-	bottom: 20px;
+	position: relative;
+	width: 150px;
+	height: 200px;
+	/*top: 20px;*/
+	/*left: 50px;*/
+}
+
+p{
+	position: absolute;
+	/* Quando a posição do elemento é do tipo "absolute", é possível
+	utilizar direções opostas como "top" e "bottom". Isso faz com que
+	o elemento seja redimensionado para obedecer às posições escolhidas.*/
+	top: 5px;
+	bottom: 4px;
+	/* Definir uma posição absoluta "left" para 5px faz com que a div do
+	HTML deste exemplo fique por cima do elemento span.*/
+	left: 5px;
+	margin: 2px 0 2px 0;
+	background-color: red;
+}
+
+span{
+	position: relative;
+	background-color: green;
+	/*Como a posição deste elemento está definida como "relative",
+	o seu z-index pode ser modificado. Isso permite que essa propriedade
+	para que o elemento span fique por cima da div no HTML deste exemplo.*/
+	z-index: 2;
 }
