@@ -1,0 +1,40 @@
+.minhaLista .estilo2:first-child span:last-child{
+	background-color: green;
+	color: white;
+}
+
+/*Este é um exemplo de como selecionar elementos de maneira mais
+específica para utilizar.
+Seletores possíveis são:
+* - Seleciona todos os elementos
+#meuElemento - Seleciona o elemento com o atributo id="meuElemento"
+.minhaClasse - Seleciona todos os elementos com o atributo
+	class="minhaClasse"
+div - Seleciona todos os elementos do tipo div (ou o nome de elemento
+	que for especificado.)
+
+Existem maneiras de combinar os seletores. Estas são algumas:
+sel1, sel2 - Seleciona os elementos do seletor "sel1" E os do seletor
+	"sel2"
+sel1 sel2 - Seleciona todos os "sel2" que estiverem dentro de "sel1",
+	independentemente da profundidade
+sel1 > sel2 - Seleciona todos os "sel2" que forem filhos diretos de
+	"sel1"
+sel1 + sel2 - Seleciona todos os "sel2" que forem imediatamente 
+	precedidos por "sel1". Se houver outro elemento entre "sel1" e "sel2"
+	a seleção não vale
+sel1 ~ sel2 - Seleciona todos os "sel2" que forem precedidos por "sel1".
+	Se houver outros elementos entre "sel1" e "sel2" a seleção ainda é
+	válida.
+[atributo] - Seleciona todos os elementos que possuírem o atributo.
+	Por exemplo, [readonly]
+[atributo=valor] - Seleciona todos os elementos que tiverem o atributo
+	com o valor especificado. Por exemplo, [type=text]
+:active - Seleciona os elementos que estiverem ativos
+:checked - Todos elementos <input> que estejam checados
+:disabled - Todos os elementos <input> que estejam desabilitados
+:empty - Todos os elementos que não têm contéudo ou filhos
+
+A lista completa de seletores se encontra em
+https://www.w3schools.com/cssref/css_selectors.asp
+*/
