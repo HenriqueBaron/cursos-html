@@ -1,0 +1,27 @@
+table, th, td, tr{
+	border: 1px solid black;
+	/*Define se a borda de células em branco é exibida ou não.
+	Os valores possíveis são "show" e "hide"*/
+	empty-cells: hide;
+}
+
+table{
+	/*Indica que as bordas dos elementos devem se juntar. Se
+	esta propriedade for comentada, as bordas da tabela vão
+	aparecer duplicadas.*/
+	border-collapse indica como as bordas dos elementos vão
+	se juntar:
+	/*collapse - junta as bordas. Caso isso seja omitido, é
+	possível perceber que as bordas parecem duplicadas.
+	separate - separa as bordas por uma distância indicada
+	por "border-spacing"*/
+	/*border-collapse: collapse;*/
+	border-collapse: separate;
+	border-spacing: 10px 30px;
+}
+
+caption{
+	/*Indica onde fica o caption da tabela. Pode ser top ou
+	bottom.*/
+	caption-side: bottom;
+}
