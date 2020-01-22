@@ -1,0 +1,28 @@
+ul{
+	/*A url poderia conter um link para um endereço na internet.
+	Como o arquivo é local e está na mesma pasta, pode-se usar
+	o nome diretamente.*/
+	/*list-style-image: url(seta.gif);*/
+
+	/*position define a indentação da lista, com "inside" ou "outside" */
+	list-style-position: outside;
+	/*
+	 *type define o marcador usado na lista. Só funciona se não
+	 *tiver sido definida uma imagem para os itens. Algumas opções
+	 *de tipos são:
+	 *disc, circle, square, decimal, decimal-leading-zero, lower-roman,
+	 *upper-roman, lower-alpha, upper-alpha, lower-greek, lower-latin,
+	 *upper-latin
+	 *Todos os que usam números ou letras acabam tornando a lista uma
+	 *lista ordenada, mesmo que o elemento seja um "ul"
+	 */
+	list-style-type: lower-greek;
+
+	/*
+	 *list-style define duas propriedades de uma vez só, com a sintaxe:
+	 *list-style: <position> <type/image>
+	 *Exemplos:
+	 *list-style: inside circle;
+	 *list-style: outside url(seta.gif);
+	 */
+}
