@@ -1,0 +1,29 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	margin: 0;
+}
+
+header{
+	padding: 15px 5px 15px 5px;
+	background-color: black;
+}
+
+a.navbar{
+	color: white;
+	font-style: normal;
+	text-decoration: initial;
+	margin: 1px 5px 1px 5px;
+}
+
+#home{
+	background-color: green;
+	height: 800px;
+}
+
+#lugar{
+	background-color: blue;
+	height: 800px;
+}
