@@ -28,11 +28,12 @@ a.navbar{
 }
 
 .title{
-	position: absolute;
-	top: 20px;
+	position: relative;
+	top: 10px;
 	left: 0;
 	right: 0;
 	margin: 0;
+	padding: 10px;
 	text-align: center;
 	color: white;
 }
@@ -41,6 +42,24 @@ a.navbar{
 	float: left;
 	height: 100%;
 	width: calc(100% / 3);
+}
+
+.contentLugar{
+	position: relative;
+	top: 20px;
+	background-color: rgb(0, 0, 0, 0.8);
+	margin: 0;
+}
+
+.contentDrinks{
+	position: relative;
+	top: 200px;
+	background-color: rgb(0, 0, 0, 0.8);
+	margin: 0;
+}
+
+.content p{
+	/*margin: 0;*/
 }
 
 #home{
