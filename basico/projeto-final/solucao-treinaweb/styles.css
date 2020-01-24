@@ -7,6 +7,35 @@ html, body{
 	color: white;
 }
 
+.section-background{
+	position: relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 500px;
+}
+
+.section-container{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.65);
+}
+
+.section-title{
+	text-align: center;
+	font-size: 2.5em;
+}
+
+.section-text{
+	padding: 10px;
+	margin: 0;
+	font-size: 1.3em;
+	background-color: rgba(0,0,0,0.7);
+}
+
 /*HEADER*/
 .main-header{
 	position: relative;
@@ -16,8 +45,55 @@ html, body{
 	width: 100%;
 }
 
+.navigation{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #3b3b3b;
+	z-index: 100;
+}
+
+.navigation-list{
+	padding: 0;
+}
+
+.navigation-list-item{
+	display: inline-block;
+	padding: 15px;
+}
+
+.nav-link{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav-link:hover{
+	color: #0079d0;
+}
+
+.logo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 90%;
+}
+
 /*O LUGAR*/
+.lugar{
+	background-image: url('./images/bar_interior.jpg');
+}
 
 /*NOSSOS DRINKS*/
+.drinks{
+	background-image: url('./images/drinks_background.jpg');
+}
+
+.drink-image{
+	max-width: 30%;
+	margin-top: -30px;
+}
 
 /*FOOTER*/
