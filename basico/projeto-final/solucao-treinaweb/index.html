@@ -10,20 +10,21 @@
 <body>
 
 	<header class="main-header">
+		<div class="ancora" id="header"></div>
 		<video class="header-video" src="./videos/copo_cerveja.mp4" autoplay muted loop></video>
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-list-item">
-					<a href="#" class="nav-link">Home</a>
+					<a href="#header" class="nav-link">Home</a>
 				</li>
 				<li class="navigation-list-item">
-					<a href="#" class="nav-link">O Lugar</a>
+					<a href="#lugar" class="nav-link">O Lugar</a>
 				</li>
 				<li class="navigation-list-item">
-					<a href="#" class="nav-link">Nossos Drinks</a>
+					<a href="#drinks" class="nav-link">Nossos Drinks</a>
 				</li>
 				<li class="navigation-list-item">
-					<a href="#" class="nav-link">Endereço</a>
+					<a href="#footer" class="nav-link">Endereço</a>
 				</li>
 			</ul>
 		</nav>
@@ -31,6 +32,7 @@
 	</header>
 
 	<section class="lugar section-background">
+		<div class="ancora" id="lugar"></div>
 		<div class="section-container">
 			<h1 class="section-title">O Lugar</h1>
 			<p class="section-text">
@@ -46,6 +48,7 @@
 	</section>
 
 	<section class="drinks section-background">
+		<div class="ancora" id="drinks"></div>
 		<div class="section-container">
 			<h1 class="section-title">Nossos Drinks</h1>
 			<img class="drink-image" src="./images/cocktails.jpg" />
@@ -57,5 +60,27 @@
 			</p>
 		</div>
 	</section>
+
+	<footer class="main-footer">
+		<div class="ancora" id="footer"></div>
+		<section class="footer-section">
+			<h1>Contato</h1>
+			<p>(xx) xxxx-xxxx</p>
+			<p>(xx) xxxx-xxxx</p>
+			<a href="mailto:tremnaweb@example.com">tremnaweb@example.com</a>
+		</section>
+		<section class="footer-section">
+			<h1>Endereço</h1>
+			<p>Avenida A, Certrem, 348</p>
+			<p>São Paulo, SP</p>
+		</section>
+		<section class="footer-section">
+			<h1>Funcionamento</h1>
+			<p>Segunda a Sexta <br>
+			17:00 - 01:00</p>
+			<p>Sábados, Domingos e Feriados<br>
+			16:00 - 04:00</p>
+		</section>
+	</footer>
 </body>
 </html>
