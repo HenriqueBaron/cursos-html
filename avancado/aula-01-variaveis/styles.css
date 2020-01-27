@@ -1,0 +1,11 @@
+:root{
+	/*--minha-cor: red;*/
+}
+
+div{
+	--minha-cor: red;
+}
+
+span{
+	color: var(--minha-cor);
+}

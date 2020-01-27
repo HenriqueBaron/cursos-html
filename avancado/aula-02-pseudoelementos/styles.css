@@ -1,0 +1,22 @@
+div{
+	position: relative;
+	border: 2px solid green;
+	width: 100px;
+	height: 20px;
+}
+
+div::before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: -12px;
+	border-top: 7px solid transparent;
+    border-right: 5px solid green;
+    border-bottom: 7px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+div::after{
+	/*content: " - DEF";*/
+	content: attr(data-numero);
+}
