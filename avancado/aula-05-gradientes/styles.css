@@ -1,0 +1,28 @@
+div{
+	width: 100%;
+	height: 250px;
+}
+
+.grad-linear{
+	/*background: linear-gradient(to right, red, green);*/
+	/*background: linear-gradient(50deg, red, green);*/
+	/*background: linear-gradient(to right, red, green 20%);*/
+	background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+
+.grad-linear-repet{
+	background: repeating-linear-gradient(to right, red, green, red 20%)
+}
+
+.grad-radial{
+	/*background: radial-gradient(ellipse, red, green);*/
+	/*background: radial-gradient(circle, red, green);*/
+	/*background: radial-gradient(red, green 20%);*/
+	/*background: radial-gradient(10% 50%, red, green);*/
+	/*background: radial-gradient(closest-side at 10% 50%, red, green);*/
+	background: radial-gradient(farthest-side at 10% 50%, red, green);
+}
+
+.grad-radial-repet{
+	background: repeating-radial-gradient(red, green 25%)
+}
