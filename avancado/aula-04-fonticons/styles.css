@@ -1,0 +1,10 @@
+.meu-icone::after{
+	/*É possível utilizar um código de caractere utf-8*/
+	content: "\00a9";
+}
+
+/*É possível editar a classe do ícone e customizá-la como
+outra fonte qualquer.*/
+.fa-arrow-right{
+	color: red;
+}
