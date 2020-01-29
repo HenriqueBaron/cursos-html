@@ -1,0 +1,19 @@
+.menu{
+	display: none;
+	color: #fff;
+	background-color: #252525;
+	margin: 0;
+	padding: 10px;
+}
+
+.menu-item{
+	list-style-type: none;
+}
+
+#meuMarcador{
+	display: none;
+}
+
+#meuMarcador:checked + .menu{
+	display: block;
+}

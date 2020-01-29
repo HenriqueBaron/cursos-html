@@ -1,0 +1,26 @@
+div{
+	height: 200px;
+	width: 400px;
+	background-color: red;
+	border: 5px solid black;
+	margin: 100px;
+}
+
+.transforms-2d{
+	/*transform: translate(5px, 10px);*/
+	/*transform: translateX(50px); [>Ou translateY<]*/
+	/*transform: rotate(45deg);*/
+	/*transform-origin: bottom right;*/
+	/*transform: scale(0.3);*/
+	/*transform: scaleX(1.8);*/
+	/*transform: skew(10deg, 50deg);*/
+	/*transform: skewX(20deg);*/
+	/*matrix() combina todas as funções com a seguinte chamada:
+	matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+	transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.transforms-3d{
+	/*perspective: 500;*/
+	-moz-transform: perspective(500) rotateX(30deg);
+}
