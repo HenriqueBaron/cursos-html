@@ -1,0 +1,25 @@
+/*
+ *Os tipos de media types disponíveis são:
+ *all
+ *print - Para impressão de página
+ *screen - Para telas coloridas em geral
+ *speech - sintetizadores de voz
+ */
+
+@media print{
+	a[href]::after{
+		/*Este conteúdo (com os links) só vai aparecer
+		se a página for impressa.*/
+		content: " - " attr(href);
+	}
+}
+
+body{
+	color: red;
+}
+
+@media screen and (min-width: 480px){
+	body{
+		color: green;
+	}
+}
