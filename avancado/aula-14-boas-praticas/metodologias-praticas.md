@@ -96,3 +96,85 @@ Associando ao seguinte HTML:
 	Treina<span class="fs-20">Web</span>
 </div>
 ```
+Aqui, temos uma `div` com uma classe comum. O tamanho de fonte dessa classe é `1.5em`, no entanto, 
+temos interesse que apenas uma palavra dentro dessa `div` tenha um tamanho de fonte maior, `2em`.
+Para isso, em vez de utilizar um seletor apenas para esse ajuste (ou ainda, declarar a regra direto no HTML),
+utilizamos a classe `fs-20`, que serve unicamente (atomicamente) para este propósito.
+Além disso, passamos a classe `mt-10` para dar uma margem superior de `10px`,
+separando este ajuste das propriedades da `div`.
+
+Com _ACSS_, geralmente são criadas classes com diversos valores para as propriedades de `margin`,
+`padding` e `font-size`.
+
+## DRY CSS
+Leva a famosa sigla do desenvolvimento de software: _Don't Repeat Yourself_.
+No caso do CSS, consiste em otimizar removendo declarações de uma mesma propriedade ao longo do código
+que tenham valores repetidos.
+Por exemplo:
+```
+div{
+	background-color: #f2f2f2;
+	height: 100px;
+	width: 40%;
+}
+
+.minha-classe{
+	background-color: #f2f2f2;
+	width: 90px;
+	height: 100px;
+	display: inline-block;
+}
+```
+Aqui, é possível ver repetição de propriedade e valor para `background-color` e `height`.
+Portanto, ao aplicar _DRY CSS_ deixaríamos como:
+```
+div, .minha-classe{
+	background-color: #f2f2f2;
+	height: 100px;
+}
+
+div{
+	width: 40%;
+}
+
+.minha-classe{
+	width: 90px;
+	display: inline-block;
+}
+```
+
+## Scalable and Modular Architecture for CSS (SMACSS)
+Foi desenvolvida pela _Yahoo!_ e é uma arquitetura amplamente utilizada.
+Baseia-se em categorizar as regras do CSS em:
+
+### Base
+São as regras _default_.
+Praticamente são compostas de seletores de um único elemento, mas podem incluir seletores de atributo,
+pseudo-classes, seletores filhos ou seletores-irmãos.
+Essencialmente, um estilo _Base_ define que onde quer que este tipo de elemento esteja na página, ele
+deve ter _essa_ aparência.
+Por exemplo:
+```
+html, body, form { margin: 0; padding: 0; }
+input[type=text] { border: 1px solid #999; }
+a { color: #039; }
+a:hover { color: #03C; }
+```
+
+### Layout
+Dividem a página em seções. _Layouts_ agrupam um ou mais _modules_.
+
+### Module
+São as partes reutilizáveis e modulares do design.
+Representam os _callouts_, as ações da barra lateral, as listas de produtos e assim por diante.
+
+### State
+Modos de descrever como os módulos ou layouts vão aparentar em um estado particular,
+por exemplo, "oculto" ou "expandido", "ativo" ou "inativo".
+Identificam também a aparência dos módulos e layouts em telas que são menores ou maiores.
+Também definem como um módulo vai aparentar em diferentes exibições, como na _homepage_ ou em uma página interna.
+
+### Theme
+São similates a regras _state_ no sentido de definirem a aparência de módulos ou layouts.
+Aplicam-se à configurações de exibição da página, por exemplo, as opções de tema claro ou tema escuro.
+A maior parte dos sites não requere uma camada de _theme_.
