@@ -178,3 +178,90 @@ Também definem como um módulo vai aparentar em diferentes exibições, como na
 São similates a regras _state_ no sentido de definirem a aparência de módulos ou layouts.
 Aplicam-se à configurações de exibição da página, por exemplo, as opções de tema claro ou tema escuro.
 A maior parte dos sites não requere uma camada de _theme_.
+
+## Inverted Triangle CSS (ITCSS)
+Aproveita o fluxo do código no CSS - isto é, a ordem em que o código é processado - para determinar as regras.
+Isso é vantajoso para determinar regras específicas que sobrescrevem as regras mais genéricas, mesmo que uma
+propriedade já tenha tido seu valor atribuído em um ponto _anterior_ do CSS.
+
+Daí o nome _Inverted Triangle_: a proposta é iniciar o código com declarações mais _genéricas_ e deixar as mais
+_específicas_ na parte final do arquivo.
+Isso é padronizado em um triângulo invertido que tem as seguintes camadas (de cima para baixo):
+* Settings - **mais genérico**;
+* Tools;
+* Generic;
+* Base;
+* Objects;
+* Components;
+* Trumps - **mais específico**.
+
+### Settings
+Configurações do projeto, como variáveis de medidas, cores etc.
+```
+$my-color: #0057fb;
+$footer-height: 120px;
+```
+
+### Tools
+Onde são colocadas funções, mixings, placeholders etc.
+Se não estiver utilizando algum preprocessador CSS, esta camada não é utilizada.
+```
+@mixin my-box(){
+	width: 200px;
+	height: 100px;
+}
+```
+
+### Generics
+Camada para as propriedades com menor especificidade.
+O mais comum aqui acaba sendo o seletor `*`.
+```
+*{
+	box-sizing: border-box;
+}
+```
+
+### Base
+Voltada para estilizações mais básicas dos elementos.
+Portanto, aqui não devem ser usados IDs ou classes, apenas seletores de tags.
+```
+div{
+	padding: 10px;
+}
+```
+
+### Objects
+Aqui são declaradas apenas classes.
+É onde fica a estilização da estrutura dos elementos.
+```
+.my-button{
+	width: 200px;
+	padding: 10px;
+}
+```
+
+### Components
+A camada superior, _Objects_, tenta ser mais genérica.
+Aqui, tenta-se ser mais específico quanto à estilização dos elementos.
+Nesta camada também são utilizadas apenas classes.
+```
+.my-red-button{
+	background-color: red;
+	color: white;
+	border: 2px solid black;
+}
+```
+
+### Trumps
+Camada com as regras mais específicas de todas.
+Por ser a última a ser processada, tudo o que é colocado aqui sobrescreve as camadas _superiores_.
+Aqui, é permitido o uso do modificador `!important`, que impede a propriedade declarada de ser
+sobrescrita.
+
+A maioria das propriedades declaradas nesta camada são pequenos ajustes em alguns elementos, ou
+definições de estado de elementos.
+```
+.hidden{
+	display: none !important;
+}
+```
