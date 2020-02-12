@@ -27,7 +27,7 @@ o CSS utilizando a metodologia OOCSS seria:
 }
 ```
 
-## Blocks, Elements and Methods (BEM)
+## Blocks, Elements and Modifiers (BEM)
 Não se trata de como _estilizar_ os elementos, mas sim de como _nomear_ as classes.
 Portanto, é utilizado em conjunto com outras práticas de estruturação do CSS.
 
@@ -265,3 +265,53 @@ definições de estado de elementos.
 	display: none !important;
 }
 ```
+
+## Reasonable System for CSS (RSCSS)
+Foi pensado para escrever CSS com mais sentido e significado.
+Isso serve para evitar confusões e conflitos ao alterar uma regra, com a possibilidade de 
+impactar elementos na página que nào eram esperados.
+
+A ideia central é que cada pedaço da interface é denominado um _componente_.
+Cada componente deve possuir elementos em seu interior.
+Por exemplo, um componente pode ser um campo de busca, como no HTML abaixo.
+```
+<div class="search-form">
+	<input type="search" class="input" />
+	<button class="button">Buscar</button>
+</div>
+```
+
+Seguindo o RSCSS, a estilização _para este componente_ seria, por exemplo
+```
+.search-form{ . . . }
+.search-form > .input{ . . . }
+.search-form > button{ . . . }
+```
+
+Como no exemplo, é convenção que os _componentes_ no RSCSS devem ter um nome, definido
+pela classe, com duas palavras pelo menos (separadas por hífens).
+Os componentes devem ter outros elementos em seu interior.
+Estes elementos, devem ter um nome, definido pela classe, composto por apenas uma palavra.
+Se for necessário utilizar mais de uma palavra para o nome do elemento, escreva-as juntas,
+como `mybutton`, por exemplo.
+
+No exemplo de CSS, é possível ver a utilização do seletor `>`, que indica que `.input` e
+`.button` são filhos _diretos_ do componente.
+Assim, se houver outros componentes aninhados dentro de `.input` ou `.button`, eles não são
+afetados por modificações no código mostrado.
+Isso evita a passagem de valores incorretos de propriedades para estes elementos internos.
+
+Variações no _estilo_ do elemento são representadas com um hífen como prefixo do nome da
+classe, por exemplo:
+```
+.mybutton.-hidden{ . . . }
+```
+
+Outra prática do RSCSS é evitar nas classes algumas propriedades como `top, left, right,
+bottom, float, margin width e height`.
+Isso não é feito principalmente nos componentes para não engessá-los.
+
+Por fim, existem os chamados Helpers, que sobrescrevem valores assim como as Trumps no
+ITCSS.
+Adicionalmente: o RSCSS não especifica nenhuma estrutura, mas a dica é manter um componente
+por arquivo.
